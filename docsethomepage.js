@@ -23,21 +23,17 @@ Ext.onReady(function () {
         });*/
         web.lists.getByTitle(listTitle).items.getById(currItemID).get().then(function (item) {
             web.lists.getByTitle(listTitle).items.getById(currItemID).currentUserHasPermissions(3).then(function (hasEditPermission) {
-                if(item.ParentDocID != null){
                     var contractWeb = new $pnp.Web(contractsWebUrl);
                     contractWeb.lists.getByTitle(contractListTitle).items.getById(item.ParentDocID).get().then(function (parentDoc) {
                         // Настройка веб-частей
                         Render_Docsethomepage_PaymentRequest(item, hasEditPermission);
                     });
-                }
-                else
-                    Render_Docsethomepage_PaymentRequest(item, hasEditPermission,null);
             });
         });
 
 });
 
-function Render_Docsethomepage_PaymentRequest(item, hasEditPermission,parentDocCost) {
+function Render_Docsethomepage_PaymentRequest(item, hasEditPermission) {
 
     var toolbar = Ext.create('Ext.toolbar.Toolbar', {
         id: 'PaymentRequestToolbar',
