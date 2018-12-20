@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title> Тестовая страница </title><meta http-equiv="X-UA-Compatible" content="IE=10" />
+        <script type="text/javascript" src="Libs/extjs65/ext-bootstrap.js"></script>
+    <script type="text/javascript" src="Libs/extjs65/build/classic/theme-triton/theme-triton.js"></script>
+    <script type="text/javascript" src="Libs/extjs65/classic/locale/overrides/ru/ext-locale-ru.js"></script>
+    <link type="text/css" rel="stylesheet" href="Libs/extjs65/build/classic/theme-triton/resources/theme-triton-all.css"/>
+
+    <script type="text/javascript" src="Libs/pnpjs/bluebird.min.js"></script>
+    <script type="text/javascript" src="Libs/pnpjs/fetch.js"></script>
+    <script type="text/javascript" src="Libs/pnpjs/pnp.min.js"></script>
+    
+
+    <script type="text/javascript" src="Utils/Components.js"></script>
+    <script type="text/javascript" src="Utils/Handlers.js"></script>
+    <script type="text/javascript" src="dispForm.js"></script>
+
+</head>
+<body>
+<style>
+    .x-grid-cell-inner {
+        white-space: normal;
+    }
+</style>
+</body>
+</html>
+
